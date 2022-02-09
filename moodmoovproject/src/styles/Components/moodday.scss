@@ -1,0 +1,62 @@
+.moodimg {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 50px;
+}
+
+.imgMaison,
+.imgFetard,
+.imgAmoureux,
+.imgAmis,
+.imgFamille {
+
+    width: 180px;
+    height: 180px;
+    padding-top: 145px;
+    margin-top: 20px;
+    border-radius: 90%;
+    
+
+}
+
+.imgMaison {
+    background-image: url(../../../public/assets/moodday/maison.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+
+}
+
+.imgFetard {
+    background-image: url(../../../public/assets/moodday/fetard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    
+
+}
+
+.imgAmoureux {
+    background-image: url(../../../public/assets/moodday/amoureux.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.imgAmis {
+    background-image: url(../../../public/assets/moodday/amis.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.imgFamille {
+    background-image: url(../../../public/assets/moodday/famille.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+h2 {
+    text-align: center;
+}
