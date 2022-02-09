@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Accueil from './pages/Accueil';
+import './styles/index.scss'
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello</h2>
-
+      <Accueil />
     </div>
   );
 }
