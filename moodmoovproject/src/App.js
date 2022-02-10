@@ -1,5 +1,4 @@
 import React from 'react';
-import Accueil from './pages/Accueil';
 import './styles/index.scss'
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Accueil from './pages/Accueil'
