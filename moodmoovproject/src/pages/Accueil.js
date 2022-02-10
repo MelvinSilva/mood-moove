@@ -7,7 +7,6 @@ import Header from '../components/Header';
 const Accueil = () => {
     return (
         <div>
-            
             <Header />
             <Main />
             <Moodday />
