@@ -1,6 +1,7 @@
 import React from 'react';
+import Accueil from './pages/Accueil';
+import './styles/index.scss'
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import Header from './components/Header';
 import Accueil from './pages/Accueil'
 import Contact from './pages/Contact';
 import Events from './pages/Events';
