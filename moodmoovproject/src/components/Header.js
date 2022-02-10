@@ -23,8 +23,7 @@ const Header = () => {
             <h3>Sortir est une aventure, un saut dans l'inconnu, un nouveau départ</h3>
             <div className="logo">
                 <img src="logo3.png" alt="logo" />
-            </div>
-           
+            </div>           
         </div>
     );
 };

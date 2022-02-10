@@ -1,7 +1,4 @@
-import React from 'react'
-import Accueil from './pages/Accueil';
 import React from 'react';
-import './styles/index.scss'
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Accueil from './pages/Accueil'
 import Contact from './pages/Contact';
@@ -14,7 +11,6 @@ import Ticket from './pages/Ticket'
 function App() {
   return (
     <div className="App">
-      <Accueil />
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Accueil} />
