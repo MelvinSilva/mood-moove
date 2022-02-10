@@ -6,9 +6,9 @@ import UnePref from './UnePref';
 const BlocUnik = () => {
     return (
         <div className='unik'>
-            {/* <OuSortir /> */}
+            <OuSortir />
             {/* <UnePref /> */}
-            <AutreChoix />
+            {/* <AutreChoix /> */}
         </div>
     );
 };
