@@ -1,10 +1,9 @@
 import Accueil from './pages/Accueil';
 import React from 'react';
-import './styles/index.scss'
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Contact from './pages/Contact';
 import Events from './pages/Events';
-import Ticket from './pages/Ticket'
+import Ticket from './pages/Ticket';
 
 
 
