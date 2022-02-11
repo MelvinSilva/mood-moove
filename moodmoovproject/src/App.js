@@ -3,7 +3,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Contact from './pages/Contact';
 import Events from './pages/Events';
 import Ticket from './pages/Ticket';
-import Accueil from './pages/Contact';
+import Accueil from './pages/Accueil';
 
 
 
