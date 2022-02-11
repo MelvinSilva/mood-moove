@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.autreChoix__text {
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: "Poppins";
+}
+
+.autreChoix__btn1, .autreChoix__btn2, .autreChoix__btn3, .autreChoix__btn4, .autreChoix__btnVal{
+    height: 30px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(242, 242, 242);
+    border-color: transparent;
+}
+
+.autreChoix__btnVal {
+    background-color: #8a1c1c;
+    color: rgb(242, 242, 242);
+    
+}
