@@ -1,5 +1,4 @@
 import React from 'react';
-import blockPrinc from './Descriptif/blockPrinc';
 import BlocUnik from './Home/BlocUnik';
 
 const Main = () => {

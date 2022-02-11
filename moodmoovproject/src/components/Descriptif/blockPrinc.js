@@ -1,14 +1,13 @@
 import React from 'react';
 
-const blockPrinc = () => {
+const BlockPrinc = () => {
     return (
-        <div>
+        <div className='principal'>
             <button>RETOUR</button>
-            <img>image</img>
             <p>lorem</p>
             <p>prix</p>
         </div>
     );
 };
 
-export default blockPrinc;
+export default BlockPrinc;
