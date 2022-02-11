@@ -1,6 +1,4 @@
 import React from 'react';
-import "../styles/Components/moodday.scss"
-import Mooddaypopup from './Mooddaypopup';
 
 const Moodday = () => {
     return (

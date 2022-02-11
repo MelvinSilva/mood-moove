@@ -1,0 +1,33 @@
+.popimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img1,
+.img2,
+.img3 {
+    width: 900px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.75);
+}
+
+.img1 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.img2 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/amazon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img3 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/disney.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
