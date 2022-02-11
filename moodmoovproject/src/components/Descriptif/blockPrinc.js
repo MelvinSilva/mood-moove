@@ -2,10 +2,13 @@ import React from 'react';
 
 const BlockPrinc = () => {
     return (
-        <div className='principal'>
-            <button>RETOUR</button>
-            <p>lorem</p>
-            <p>prix</p>
+        <div>
+            <div className='div__btnReturn'><button className='principal__btnReturn'>RETOUR</button></div>
+            <div className='principal'>
+                <div className='image'></div>
+                <p className='principal__text'></p>
+                <p className='principal__price'>prix</p>
+            </div>
         </div>
     );
 };
