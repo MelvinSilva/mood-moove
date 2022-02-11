@@ -13,11 +13,10 @@ const Footer = () => {
 
 
                 <div className='barre-nav'>
-                    <li className='li_nav' >Accueil</li>
                     <li className='li_nav' >Où sortir</li>
                     <li className='li_nav' >Billeterie</li>
-                    <li className='li_nav' >Evenement</li>
-                    <li className='li_nav' >Contact</li>
+                    <li className='li_nav' >Evènement</li>
+                    <li className='li_nav' > Nous Contacter</li>
                 </div>
             </div>
 

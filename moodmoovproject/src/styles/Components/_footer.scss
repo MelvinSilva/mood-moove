@@ -21,8 +21,8 @@
 
 .barre-nav{
     display: flex;
+    justify-content: center;
     margin-right: 3%;
-    justify-content:space-between;
     width: 100%;
     align-items: center;
     margin-top: 10%;
@@ -33,12 +33,16 @@
     margin: auto;
     left: 30%;
     color: rgba(173, 0, 0, 0.918);
-    font-family: 27px 'Recursive', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-size: 35px;
+   
     
 }
 .li_nav {
+
     list-style: none;
-    margin-right: 10%;
+    margin-right: 1%;
+    padding: 10px;
    
     
 }
