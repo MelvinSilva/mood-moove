@@ -15,26 +15,28 @@
 .footer-center{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 150px;
     width:50%;
 }
 
 .barre-nav{
     display: flex;
     justify-content: center;
-    margin-right: 3%;
+    margin-right: 0%;
     width: 100%;
     align-items: center;
-    margin-top: 10%;
 }
 
  .titre {
     display: block;
-    margin: auto;
     left: 30%;
     color: rgba(173, 0, 0, 0.918);
     font-family: 'Recursive', sans-serif;
     font-size: 35px;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+    
    
     
 }
@@ -49,7 +51,7 @@
 
 .footer-right {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     width: 25%;
     
