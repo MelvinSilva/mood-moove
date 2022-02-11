@@ -14,19 +14,7 @@ body {
     background-color: rgb(242, 242, 242);
 }
 
-li {
-  list-style-type: none;
-}
-
-a {
-  font-size: 16px;
-  text-decoration: none;
-  color: rgb(91, 91, 91);
-  cursor: pointer;
-}
-
-
-h1 {
+.title-header {
     color: rgb(55, 55, 55);
     margin: 3px 0px 0px 0px;
     font-size: 50px;
@@ -39,7 +27,7 @@ h1 {
     
 }
 
-h3 {
+.title-header-h3 {
     padding-bottom: 20px;
     font-size: 14px;
     margin-top: 0px;
@@ -50,7 +38,7 @@ h3 {
 
 }
 
-img {  
+.logo-header img {  
     position: absolute;
     top: 25px;
     left: 20px;
@@ -70,6 +58,14 @@ img {
       padding: 10px;
       border-radius: 4px;
       position: relative;
+      font-size: 16px;
+      text-decoration: none;
+      color: rgb(91, 91, 91);
+      cursor: pointer;
+    }
+
+    li {
+      list-style-type: none;
     }
     .nav-active {
       &::after {
