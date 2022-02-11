@@ -5,9 +5,6 @@ import Contact from './pages/Contact';
 import Events from './pages/Events';
 import Ticket from './pages/Ticket';
 
-
-
-
 function App() {
   return (
     <div className="App">
