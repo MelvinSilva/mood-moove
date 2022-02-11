@@ -7,11 +7,11 @@ const Moodday = () => {
         <div>
             <h2>Mood du jour</h2>
             <div id="contenu" className="moodimg">
-		        <button className="imgMaison" >A la Maison</button>
-		        <button className="imgFetard">Fétard</button>
-		        <button className="imgAmoureux">En Amoureux</button>
-		        <button className="imgAmis">Entre Amis</button>
-		        <button className="imgFamille">En Famille</button>
+		        <button className="imgMaison" ></button>
+		        <button className="imgFetard"></button>
+		        <button className="imgAmoureux"></button>
+		        <button className="imgAmis"></button>
+		        <button className="imgFamille"></button>
             </div>
         </div>
     );
