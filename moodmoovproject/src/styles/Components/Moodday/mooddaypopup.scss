@@ -6,11 +6,24 @@
 
 .img1,
 .img2,
-.img3 {
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.img11,
+.img12,
+.img13,
+.img14,
+.img15 {
     width: 900px;
     height: 400px;
     margin: 20px;
     box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.75);
+    cursor: pointer;
 }
 
 .img1 {
@@ -19,15 +32,89 @@
     background-size: cover;
 
 }
+
 .img2 {
     background-image: url(../../../../public/assets/moodday/mooddaypopup/amazon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
+
 .img3 {
     background-image: url(../../../../public/assets/moodday/mooddaypopup/disney.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
+}
+
+.img4 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/disco1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img5 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/party.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/tomorrowland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img7 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/terrasse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img8 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/gorde.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img9 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/jacuzzi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img10 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/gamestate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img11 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img12 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/picnic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img13 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/disneyland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img14 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/puydufou.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img15 {
+    background-image: url(../../../../public/assets/moodday/mooddaypopup/zoo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
