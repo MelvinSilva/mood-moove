@@ -1,32 +1,73 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaGoogle, FaTwitter } from "react-icons/fa";
+import { NavLink } from "react-router-dom"
 const Footer = () => {
     return (
+        <div>
+            <div className="footer">
 
-        <div className="footer">
-
-            <div className="footer-left">
-                <img src='logo3.png'/>
-            </div>
-            <div className='footer-center'>
-                <h3 className="titre">Mood'Moove</h3>
-
-
-                <div className='barre-nav'>
-                    <li className='li_nav' >Où sortir</li>
-                    <li className='li_nav' >Billeterie</li>
-                    <li className='li_nav' >Evènement</li>
-                    <li className='li_nav' > Nous Contacter</li>
+                <div className="footer-left">
+                    <img src='logo3.png' alt='logo3' />
                 </div>
-            </div>
+                <div className='footer-center'>
+                    <h3 className="titre">Mood'Moove</h3>
+                    {/* <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3> */}
 
-            <div className="footer-right">
-                <div className='facebook'><FaFacebookF /> </div>
-                <div className='insta'><FaInstagram /></div>
-                <div className='twitter'><FaTwitter /></div>
-                <div className='google'><FaGoogle /></div>
-            </div>
-        </div >
+
+                    <div className="navigation">
+                        <NavLink exact to="/" activeClassName="nav-active">
+                            Accueil
+                        </NavLink>
+                        <NavLink exact to="/billeterie" activeClassName="nav-active">
+                            Billeterie
+                        </NavLink>
+                        <NavLink exact to="/events" activeClassName="nav-active">
+                            Evenements
+                        </NavLink>
+                        <NavLink exact to="/contact" activeClassName="nav-active">
+                            Contact
+                        </NavLink>
+                    </div>
+                </div>
+
+                <div className="footer-right">
+                    <div className='facebook'><FaFacebookF /> </div>
+                    <div className='insta'><FaInstagram /></div>
+                    <div className='twitter'><FaTwitter /></div>
+                    <div className='google'><FaGoogle /></div>
+                </div>
+            </div >
+
+            <div className="footer2">
+                <div className='footer-center'>
+                    <h3 className="titre">Mood'Moove</h3>
+                    {/* <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3> */}
+
+
+                    <div className="navigation">
+                        <NavLink exact to="/" activeClassName="nav-active">
+                            Accueil
+                        </NavLink>
+                        <NavLink exact to="/billeterie" activeClassName="nav-active">
+                            Billeterie
+                        </NavLink>
+                        <NavLink exact to="/events" activeClassName="nav-active">
+                            Evenements
+                        </NavLink>
+                        <NavLink exact to="/contact" activeClassName="nav-active">
+                            Contact
+                        </NavLink>
+                    </div>
+                </div>
+
+                <div className="footer-right3">
+                    <div className='twitter'><FaTwitter /></div>
+                    <div className='google'><FaGoogle /></div>
+                    <div className='facebook'><FaFacebookF /> </div>
+                    <div className='insta'><FaInstagram /></div>
+                </div>
+            </div >
+        </div>
     )
 };
 export default Footer;

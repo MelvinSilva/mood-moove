@@ -1,18 +1,17 @@
 import React from 'react';
-import Header from '../components/Header';
-import Moodday from '../components/Moodday/Moodday';
+import ContactBlock from '../components/Contact/ContactBlock';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 
-
-const Accueil = () => {
+const Contact = () => {
     return (
         <div>
             <Header />
-            <Moodday />
+            <ContactBlock />
             <Footer />
         </div>
     );
 };
 
-export default Accueil;
+export default Contact;
