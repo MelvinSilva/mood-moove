@@ -1,10 +1,14 @@
-@import "./Components/footer.scss";
-@import "./Components/moodday.scss";
+@import "./Components/Moodday/moodday.scss";
 @import "./Components/Home/OuSortir.scss";
 @import "./Components/Home/UnePref.scss";
 @import "./Components/Home/BlocUnik.scss";
 @import "./Components/Home/AutreChoix.scss";
+@import "./Components/footer.scss";
+@import "./Components/Moodday/mooddaypopup.scss";
 @import "./Components/Main.scss";
 @import "./components/header.scss";
-@import "./Components/Descriptif/BlockPrinc.scss"
-
+@import "./Components/Descriptif/BlockPrinc.scss";
+@import "./Components/Contact/formulaire.scss";
+@import "./Components/Contact/ContactBlock.scss";
+@import "./Components/avis.scss";
+@import "./Components/listeavis.scss"

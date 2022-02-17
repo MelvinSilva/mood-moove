@@ -1,17 +1,17 @@
 import React from 'react';
-import ContactBlock from '../components/Contact/ContactBlock';
+import Avis from '../components/Avis';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 
-const Contact = () => {
+const AvisClients = () => {
     return (
         <div>
             <Header />
-            <ContactBlock />
+            <Avis />
             <Footer />
         </div>
     );
 };
 
-export default Contact;
+export default AvisClients;

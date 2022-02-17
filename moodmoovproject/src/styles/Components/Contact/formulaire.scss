@@ -1,0 +1,96 @@
+.formulaire {
+    background-color: rgba(242, 242, 242, 0.473);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.75);
+    width: 50%;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-top: 40px;
+    
+
+    @media all and(max-width:770px){
+        width: 95%;
+        
+    }
+    
+    
+    & h2 {
+        font-size: 30px;
+        margin-top: 50px;
+        font-family: "Poppins";
+    }
+    &__firstSecondName {
+        display: flex;
+        justify-content: center;
+
+        @media all and(max-width: 770px){
+            flex-direction: column;
+        }
+    }
+
+    
+    &__envoie {
+        background-color: #8a1c1c;
+        color: rgb(242, 242, 242);
+        height: 30px;
+        width: 250px;
+        margin: 10px auto;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+
+        @media all and(max-width:770px){
+            width: 90%;
+        }
+        
+    }
+
+
+
+    
+
+    
+    &__filho, &__textaera {
+        height: 30px;
+        width: 80%;
+        margin: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+        background-color: rgb(242, 242, 242);
+        border-color: transparent;
+
+        @media all and(max-width:770px){
+            width: 80%;
+        }
+    }
+    
+    &__firstSecondName input{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;
+
+        @media all and(max-width:770px){
+            margin-left: 0;
+            margin-right: 0;
+            margin: 10px auto;
+            width: 95%;
+        }
+    }
+
+    &__firstSecondName {
+        width: 85%;
+    }
+
+    &__textaera {
+        height: 60px;
+        width: 80%;
+        resize: none;
+    }
+    
+}
