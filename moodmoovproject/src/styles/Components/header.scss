@@ -67,16 +67,10 @@ body {
     li {
       list-style-type: none;
     }
-    .nav-active {
-      &::after {
-        content: "";
-        width: 85%;
-        height: 5px;
-        background-color: $color-1;
-        position: absolute;
-        bottom: 1px;
-        left: 50%;
-        transform: translateX(-50%);
+    .nav-link {
+      &--active {
+        border-bottom: solid 6px #8a1c1c;
+        border-radius: 0px;
       }
     }
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
 .moodimg {
     display: flex;
     justify-content: space-around;
@@ -14,10 +16,22 @@
     height: 180px;
     padding-top: 145px;
     margin-top: 20px;
+    margin-bottom: 50px;
     border-radius: 90%;
     border-color: transparent;
 
 }
+
+.imgMaison:hover, // effet hover zoom + opacité
+.imgFetard:hover,
+.imgAmoureux:hover,
+.imgAmis:hover,
+.imgFamille:hover {
+    opacity: .7;
+    transition: .3s ease-in-out;
+    transform: scale(1.2)
+
+}   
 
 .imgMaison {
     background-image: url(../../../../public/assets/moodday/maison.png);
@@ -62,6 +76,8 @@
     box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.637);
 }
 
-h2 {
+h1 {
     text-align: center;
+    font-family: "Poppins";
+    color: #8a1c1c;
 }
