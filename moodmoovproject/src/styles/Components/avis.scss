@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+.news-container {
+  margin-bottom: 40px;
+  font-family: "Poppins";
+
+    h1 {
+      color: #8a1c1c ;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    form {
+      display: grid;
+      min-width: 400px;
+      text-align: center;
+      width: 40%;
+      max-width: 500px;
+      margin: 0 auto;
+      
+  
+      input,
+      textarea {
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0.5px solid #7272724b;
+        resize: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.084);
+        font-family: "Poppins";
+        font-weight: normal;  
+      }
+      textarea {
+        height: 80px;
+      }
+      
+      input[type="submit"] {
+        width: 280px;
+        margin: 15px auto;
+        cursor: pointer;
+        transition: 0.4s;
+        background: #8a1c1c;
+        color: whitesmoke;
+        font-size: 15px;
+        
+  
+        &:hover {
+          background:  rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
+        }
+      }
+      .stars {
+        margin-top: 5px;
+      }
+    }
+}

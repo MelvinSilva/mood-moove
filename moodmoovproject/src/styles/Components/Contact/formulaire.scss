@@ -9,6 +9,7 @@
     flex-direction: column;
     border-radius: 30px;
     margin-top: 40px;
+    
 
     @media all and(max-width:770px){
         width: 95%;
@@ -40,12 +41,20 @@
         border-radius: 10px;
         text-align: center;
         font-size: 16px;
+        border: none;
+        cursor: pointer;
 
         @media all and(max-width:770px){
             width: 90%;
         }
         
     }
+
+
+
+    
+
+    
     &__filho, &__textaera {
         height: 30px;
         width: 80%;

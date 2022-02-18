@@ -15,17 +15,17 @@ const Footer = () => {
 
 
                     <div className="navigation">
-                        <NavLink exact to="/" activeClassName="nav-active">
+                        <NavLink to="/" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>
-                        <NavLink exact to="/billeterie" activeClassName="nav-active">
-                            Billeterie
-                        </NavLink>
-                        <NavLink exact to="/events" activeClassName="nav-active">
-                            Evenements
-                        </NavLink>
-                        <NavLink exact to="/contact" activeClassName="nav-active">
+                        <NavLink to="/contact" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
                             Contact
+                        </NavLink>
+                        <NavLink to="/avis" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
+                            Avis clients
                         </NavLink>
                     </div>
                 </div>
@@ -45,17 +45,17 @@ const Footer = () => {
 
 
                     <div className="navigation">
-                        <NavLink exact to="/" activeClassName="nav-active">
+                        <NavLink to="/" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>
-                        <NavLink exact to="/billeterie" activeClassName="nav-active">
-                            Billeterie
-                        </NavLink>
-                        <NavLink exact to="/events" activeClassName="nav-active">
-                            Evenements
-                        </NavLink>
-                        <NavLink exact to="/contact" activeClassName="nav-active">
+                        <NavLink to="/contact" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
                             Contact
+                        </NavLink>
+                        <NavLink to="/avis" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
+                            Avis clients
                         </NavLink>
                     </div>
                 </div>

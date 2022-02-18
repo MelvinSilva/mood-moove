@@ -3,7 +3,7 @@ import React from 'react';
 const Moodday = () => {
     return (
         <div>
-            <h2>Mood du jour</h2>
+            <h1>Mood du jour</h1>
             <div id="contenu" className="moodimg">
 		        <button className="imgMaison" ></button>
 		        <button className="imgFetard"></button>

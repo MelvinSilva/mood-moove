@@ -1,16 +1,17 @@
 import React from 'react';
+import Avis from '../components/Avis';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Moodday from '../components/Moodday/Moodday';
 
-const Events = () => {
+
+const AvisClients = () => {
     return (
         <div>
             <Header />
-            <Moodday />
+            <Avis />
             <Footer />
         </div>
     );
 };
 
-export default Events;
+export default AvisClients;

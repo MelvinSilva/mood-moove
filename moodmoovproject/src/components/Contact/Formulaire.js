@@ -10,7 +10,7 @@ const Formulaire = () => {
             </div>
             <input type='text' className='formulaire__email formulaire__filho' placeholder='Votre Email' />
             <textarea className='formulaire__text formulaire__textaera' placeholder='Votre Question' />
-            <input type='submit' className='formulaire__envoie' placeholder='Envoyer' />
+            <button type='submit' className='formulaire__envoie'>Envoyer</button>
         </div>
     )
 };
