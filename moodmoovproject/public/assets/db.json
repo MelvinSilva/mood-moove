@@ -1,20 +1,21 @@
 {
   "articles": [
     {
-      "author": "From Scratch",
+      "author": "From Scratch ♥",
       "content": "      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
       "date": 1621530288602,
       "star": "100",
       "id": 1
     },
     {
-      "author": "Bill Gates",
+      "author": "Elon Musk",
       "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.\n\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
       "date": 1621536029778,
-      "star": "80",
-      "id": 2
+      "star": "60",
+      "id": 2  
     },
     {
+<<<<<<< HEAD
       "author": "fgxbdwbsdvsdvsdvsd",
       "content": "dfdfwbdfbdfwbdfbdfbdfbvsdvsdvsdvsdvsd",
       "date": 1645101757239,
@@ -41,6 +42,13 @@
       "date": 1645113164138,
       "star": 80,
       "id": 6
+=======
+      "author": "Alban Thaumur",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.\n\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
+      "date": 1621536029778,
+      "star": "100",
+      "id": 2  
+>>>>>>> 16a3e88f685e1ac322c4e8caec138b52cb22e40c
     }
   ]
 }

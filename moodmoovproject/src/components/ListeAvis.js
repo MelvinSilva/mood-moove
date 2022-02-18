@@ -12,7 +12,7 @@ const ListeAvis = ({ article }) => { // on appel ici article directement qui est
         })
         return newDate
     }
-
+    
 
     return (
         <div className="article">
@@ -21,7 +21,7 @@ const ListeAvis = ({ article }) => { // on appel ici article directement qui est
                 <em>Posté le : {dateParser(article.date)}</em>
             </div>
             <p className="content">{article.content}</p>
-            <p className="note"><span>●</span> {article.author} <em>a donné une note de : <span><strong>{article.star}/100</strong></span></em></p>
+            <p className="note">{article.author} <em>évalue son expèrience avec <span><strong>{article.star/20} ★</strong></span></em></p>
         </div>
     );
 };
