@@ -10,8 +10,7 @@ const Footer = () => {
                     <img src='logo3.png' alt='logo3' />
                 </div>
                 <div className='footer-center'>
-                    <h3 className="titre">Mood'Moove</h3>
-                    {/* <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3> */}
+                    <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3>
 
 
                     <div className="navigation">
@@ -45,17 +44,17 @@ const Footer = () => {
 
 
                     <div className="navigation">
-                        <NavLink exact to="/" activeClassName="nav-active">
+                        <NavLink to="/" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>
-                        <NavLink exact to="/billeterie" activeClassName="nav-active">
-                            Billeterie
-                        </NavLink>
-                        <NavLink exact to="/events" activeClassName="nav-active">
-                            Evenements
-                        </NavLink>
-                        <NavLink exact to="/contact" activeClassName="nav-active">
+                        <NavLink to="/contact" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
                             Contact
+                        </NavLink>
+                        <NavLink to="/avis" className={({isActive}) =>
+                        "nav-link" + (isActive ? "--active" : "")}>
+                            Avis clients
                         </NavLink>
                     </div>
                 </div>
