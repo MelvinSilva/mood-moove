@@ -10,8 +10,7 @@ const Footer = () => {
                     <img src='logo3.png' alt='logo3' />
                 </div>
                 <div className='footer-center'>
-                    <h3 className="titre">Mood'Moove</h3>
-                    {/* <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3> */}
+                    <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3>
 
 
                     <div className="navigation">
