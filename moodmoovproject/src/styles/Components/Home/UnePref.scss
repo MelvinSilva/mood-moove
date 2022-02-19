@@ -5,6 +5,8 @@
     font-size: 30px;
     margin-top: 50px;
     font-family: "Poppins";
+    background-color:rgb(242, 242, 242);
+    color: #8a1c1c;
 }
 
  .unePref__btn1, .unePref__btn2, .unePref__btn3, .unePref__btn4, .unePref__btnVal{
@@ -17,10 +19,22 @@
     background-color: rgb(242, 242, 242);
     border-color: transparent;
     cursor: pointer;
+
+    &:hover {
+        background:  #8a1c1cc9;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
 }
 
 .unePref__btnVal {
     background-color: #8a1c1c;
     color: rgb(242, 242, 242);
+
+    &:hover {
+        background:  rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
     
 }

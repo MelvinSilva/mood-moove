@@ -9,12 +9,12 @@ const UnePref = () => {
     }
     return (
         <div className='unePref'>
-            <p className='unePref__text'>UNE PREFERENCE</p>
+            <p className='unePref__text'>UNE PRÉFÉRENCE</p>
             <button className='unePref__btn1'>Théatre</button>
             <button className='unePref__btn2'>Spectacle</button>
             <button className='unePref__btn3'>Musée</button>
             <button className='unePref__btn4'>Concert</button>
-            <button onClick={handleClick} className='unePref__btnVal'>Validé</button>
+            <button onClick={handleClick} className='unePref__btnVal'>VALIDER</button>
         </div>
     );
 };
