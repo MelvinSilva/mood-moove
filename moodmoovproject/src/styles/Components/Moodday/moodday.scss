@@ -2,8 +2,10 @@
 
 .moodimg {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0px 50px;
+
 }
 
 .imgMaison,
@@ -37,7 +39,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0%;
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.637);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.301);
 
 }
 
@@ -46,7 +48,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0%;
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.637);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.301);
 
 
 }
@@ -56,7 +58,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0%;
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.637);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.301);
 }
 
 .imgAmis {
@@ -64,7 +66,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0%;
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.637);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.301);
 }
 
 .imgFamille {
@@ -72,7 +74,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0%;
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.637);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.301);
 }
 
 h1 {
