@@ -8,7 +8,7 @@ const AutreChoix = () => {
             <button className='autreChoix__btn2'>Visite</button>
             <button className='autreChoix__btn3'>Netflix</button>
             <button className='autreChoix__btn4'>Aléatoire</button>
-            <button className='autreChoix__btnVal'>Validé</button>
+            <button className='autreChoix__btnVal'>VALIDER</button>
         </div>
     );
 };

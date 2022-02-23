@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+
 .formulaire {
-    background-color: rgba(242, 242, 242, 0.473);
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.75);
+    background-color: rgba(242, 242, 242, 0.303);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.543);
     width: 50%;
     height: 420px;
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: 40px;
     
 
@@ -18,6 +21,7 @@
     
     
     & h2 {
+        color: #ffffff;
         font-size: 30px;
         margin-top: 50px;
         font-family: "Poppins";
@@ -62,6 +66,7 @@
         border-radius: 10px;
         text-align: center;
         font-size: 16px;
+        font-family: "Poppins";
         background-color: rgb(242, 242, 242);
         border-color: transparent;
 
