@@ -14,7 +14,7 @@ const Footer = () => {
 
 
                     <div className="navigation">
-                        <NavLink to="/accueil" className={({isActive}) =>
+                        <NavLink to="/" className={({isActive}) =>
                         "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>
@@ -44,7 +44,7 @@ const Footer = () => {
 
 
                     <div className="navigation">
-                        <NavLink to="/accueil" className={({isActive}) =>
+                        <NavLink to="/" className={({isActive}) =>
                         "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>

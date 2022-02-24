@@ -1,5 +1,5 @@
 import React from 'react';
-import BlocUnik from './Home/BlocUnik';
+import BlocUnik from './BlocUnik';
 
 const Main = () => {
     return (
