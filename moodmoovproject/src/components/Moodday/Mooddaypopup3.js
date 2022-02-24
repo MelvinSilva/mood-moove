@@ -8,8 +8,8 @@ const Mooddaypopup3 = () => {
             <Header />
             <div id="moodpopup3" className="popimg">
 		        <a href='https://www.booking.com/hotel/fr/terrass-paris.fr.html'><button className="img7"></button></a>
-		        <a href='https://www.gordes-village.com/'><button className="img8"></button></a>
-		        <a href='https://inspirationfortravellers.com/chambres-hotels-avec-jacuzzi-prive-selection-adresses-en-france'><button className="img9"></button></a>
+		        <a href='https://monparisjoli.com/2015/02/02/10-idees-de-promenades-romantiques-a-paris/'><button className="img8"></button></a>
+		        <a href='https://www.cieldeparis.com/'><button className="img9"></button></a>
             </div>
             <Footer />
         </div>

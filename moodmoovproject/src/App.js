@@ -13,13 +13,6 @@ import Mooddaypopup4 from './components/Moodday/Mooddaypopup4';
 import Mooddaypopup5 from './components/Moodday/Mooddaypopup5';
 
 
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> 6118c88b1fb598e14340a22df2cd30f9fba1cc81
 function App() {
   return (
     <div className="App">
