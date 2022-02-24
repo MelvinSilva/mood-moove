@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+.unik {
+    background-color: rgba(242, 242, 242, 0.358);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.548);
+    width: 800px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 60px;
+}
 
 .ouSortir__text {
     font-size: 30px;
