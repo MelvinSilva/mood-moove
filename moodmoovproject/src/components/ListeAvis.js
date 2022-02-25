@@ -14,7 +14,7 @@ const ListeAvis = ({ article }) => { // on appel ici article directement qui est
             year: "numeric",
             month: "long",
             day: "numeric",
-            hour: "numeric",
+            hour: "numeric", 
             minute: "numeric"
         })
         return newDate

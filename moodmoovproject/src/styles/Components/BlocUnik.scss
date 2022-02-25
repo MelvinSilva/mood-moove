@@ -1,6 +1,9 @@
 .unik {
-    background-color: rgba(242, 242, 242, 0.358);
-    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.548);
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    background-color: rgba(242, 242, 242, 0.221);
+    box-shadow: 1px 2px 15px 4px rgba(5, 5, 5, 0.377);
     width: 800px;
     height: 360px;
     display: flex;
@@ -8,6 +11,15 @@
     text-align: center;
     border-radius: 20px;
     margin-top: 60px;
+
+        .field-list {
+            position: absolute;
+            top: 300%;
+            display:flex;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 }
 
 .ouSortir__text {
