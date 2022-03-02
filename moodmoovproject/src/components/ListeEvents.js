@@ -15,7 +15,7 @@ const ListeEvents = ({ api }) => { // on appel ici API directement qui est un pr
                 <h5><em>{api.fields.address_name}</em> - {api.fields.address_street}, {api.fields.address_zipcode} {api.fields.address_city}</h5>
                 <p>{api.fields.price_detail}</p>
                 {/* ICI NE MARCHE PAS CONFLIT CSS VOIR PLUS BAS <p><a className="link" href={api.fields.access_link ? api.fields.access_link : "" }>{api.fields.access_link ? "Voir le site de l'évenement" : "" }</a></p>*/}
-                {api.fields.access_link ? (<p><a className="link" href={api.fields.access_link}>Voir le site de l'évenement</a></p>) : ("")}
+                {api.fields.access_link && <p><a className="link" href={api.fields.access_link}>Voir le site de l'évenement</a></p>}
                 {/* si il y a un lien dans l'api tu affiches le lien avenc sa classe CSS correspondante.......................................sinon tu affiches rien */}
             </div>
     
