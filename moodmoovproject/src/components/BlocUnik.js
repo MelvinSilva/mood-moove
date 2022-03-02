@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ListeEvents from './ListeEvents';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -13,7 +14,10 @@ const BlocUnik = () => {
     const [date, setDate] = useState("")
     const [genre, setGenre] = useState("")
     const [arrondissement, setArrondissement] = useState("")
-
+    let navigate = useNavigate()
+    let handleClick = ()=> {
+        navigate ('DemoCarousel')
+    }
 
 
     useEffect(() => { // APPEL DE L'API GENERALE
@@ -99,7 +103,7 @@ const BlocUnik = () => {
                     <option value="&refine.tags=Street-art">Street-art</option>
                     <option value="&refine.tags=Th%C3%A9%C3%A2tre">Théatre</option>
                 </select>
-                <button type="submit" className='ouSortir__btnVal'>VALIDER</button>
+                <button onClick = {handleClick} type="submit" className='ouSortir__btnVal'>VALIDER</button>
             </form>
 
             <div className="field-list">

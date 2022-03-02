@@ -1,6 +1,6 @@
 import React from 'react';
-import BlocUnik from './BlocUnik';
 import Video from '../arcResize.mov'
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
@@ -8,7 +8,7 @@ const Main = () => {
             <video autoPlay mute loop className="video" src={Video}  />
 
             <div className='Home'>
-                <BlocUnik />
+                <Outlet />
             </div>
         </div>
     );
