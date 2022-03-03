@@ -26,7 +26,7 @@ const BlocUnik = () => {
 
     const submitForm = (e) => { // APPEL DE L'API AVEC FILTRAGE AU MOMENT DU CLICK
         e.preventDefault();
-        axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&q=date_start%3E%22${date}%22${genre}${arrondissement}&rows=500`)
+        axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-${date === "" ? "" : `&q=date_start%3E%22${date}%22`}${genre}${arrondissement}&rows=500`)
             .then((res) => {
                 setTest(res.data.records)
             })
@@ -63,7 +63,7 @@ const BlocUnik = () => {
                 </select>
 
                 <input onChange={(e) => setDate(e.target.value)} className='ouSortir__date' type="date" id="start" name="trip-start"
-                    min="2022-01-01" max="2025-12-31" value={Date.now()} />
+                    min="2022-01-01" max="2025-12-31" />
 
                 <select className='ouSortir__btn1' onChange={(e) => setGenre(e.target.value)}>
                     <option value="">--Genre--</option>

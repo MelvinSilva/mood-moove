@@ -4,13 +4,10 @@ import Video from '../arcResize.mov'
 
 const Main = () => {
     return (
-        <div>
-            <video autoPlay mute loop className="video" src={Video}  />
-
-            <div className='Home'>
+        <div className='Home'>
                 <BlocUnik />
-            </div>
         </div>
+    
     );
 };
 
