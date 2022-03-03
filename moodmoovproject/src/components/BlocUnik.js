@@ -1,59 +1,48 @@
 import React from 'react';
 import axios from 'axios';
-import { useEffect } from 'react'; 
+import { useEffect } from 'react';
 import { useState } from 'react';
-import ListeEvents from './ListeEvents';
 import { useNavigate } from 'react-router-dom';
 import Video from '../arcResize.mov'
+import { useContext } from 'react';
+import DisplayApi from './DisplayApi';
 
 
 const BlocUnik = () => {
-
-    const [dataApi, setDataApi] = useState([])
+    const { setResultApi } = useContext(DisplayApi)
     const [dateStart, setDateStart] = useState("")
     const [dateEnd, setDateEnd] = useState("")
     const [genre, setGenre] = useState("")
     const [arrondissement, setArrondissement] = useState("")
     let navigate = useNavigate()
-    let handleClick = ()=> {
-        navigate ('Demo')
+    let handleClick = () => {
+        navigate('Demo')
     }
 
-
-    useEffect(() => { // APPEL DE L'API GENERALE
-        axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=500`)
-            .then((res) => {
-                setDataApi(res.data.records)
-            })
-
-    }, [])
-
-
-    const [soumettreForm, setSoumettreForm] = useState(false) // soumission du formulaire initialement sur "faux"
+    
 
     const submitForm = (e) => { // fonction qui appel l'api au moment du click sur le formulaire
         e.preventDefault();
-        setSoumettreForm(true) // soumission du formulaire qui passe sur "vrai"
-    }
+            }
 
     const dateFilter = `&q=date_start%3A%5B${dateStart}+TO+${dateEnd}%5D`
     // On choisi la date de debut dans l'input dateStart et la date de fin dans l'input dateEnd
-   
+
     useEffect(() => { // Appel de l'api 
         axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-${dateFilter}${genre}${arrondissement}&rows=500`)
             .then((res) => {
-                setDataApi(res.data.records)
+                setResultApi(res.data.records)
             })
     }, [arrondissement, genre, dateFilter]) // dépendence qui relance la requete de l'api a chaque modif
 
-    
+
 
 
     return (
         <div>
-            <video autoPlay loop className="video" src={Video}  />
+            <video autoPlay loop className="video" src={Video} />
             <div className='unik'>
-                <form className='ouSortir' onSubmit={(e) => submitForm(e)}> 
+                <form className='ouSortir' onSubmit={(e) => submitForm(e)}>
                     <p className='ouSortir__text'>OU SORTIR ?</p>
                     <select className='ouSortir__btn1' onChange={(e) => setArrondissement(e.target.value)}>
                         <option value="">--Arrondissement--</option>
@@ -117,16 +106,12 @@ const BlocUnik = () => {
                     <div></div>
                     <input required onChange={(e) => setDateStart(e.target.value)} className='ouSortir__date' type="date" id="date" />
                     <input required onChange={(e) => setDateEnd(e.target.value)} className='ouSortir__date' type="date" id="date2" />
-                    <button onClick = {handleClick} type="submit" className='ouSortir__btnVal'>VALIDER</button>
-                    
+                    <button onClick={handleClick} type="submit" className='ouSortir__btnVal'>VALIDER</button>
+
                 </form>
 
             </div>
-            <div>
-                {soumettreForm && dataApi.map((api, key) => (  // on map le tableau avec les données de notre api SI  le formulaire a été soumis (&& = rendu conditionnel)
-                    <ListeEvents api={api} key={key} />   // "api" est un props connecté à ListeEvents
-                ))}
-            </div>
+
         </div>
     );
 };
