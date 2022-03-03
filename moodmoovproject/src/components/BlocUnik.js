@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import Video from '../arcResize.mov'
 
 
+
 const BlocUnik = () => {
 
     const [dataApi, setDataApi] = useState([])
@@ -129,6 +130,6 @@ const BlocUnik = () => {
             </div>
         </div>
     );
-};
+};s
 
 export default BlocUnik;

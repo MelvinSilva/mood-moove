@@ -2,7 +2,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-const DemoCarousel = () => {
+const DemoCarousel = ( { api }) => {
 
     return (
 
@@ -10,7 +10,7 @@ const DemoCarousel = () => {
             <Carousel >
 
                 <div>
-                    <img src="../assets/Moodday/amis.png" />
+                    <img src={api.fields.cover_url ? api.fields.cover_url : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Pas_d%27image_disponible.svg/1200px-Pas_d%27image_disponible.svg.png"} alt="ok" />   
                     <p className="legend">Photo 1</p>
                 </div>
                 <div>
