@@ -85,3 +85,21 @@
     }
     
 }
+
+//Pour la video//
+
+.Home {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-attachment: fixed;
+} 
+
+.video {
+    width: 100%;
+    z-index: -10;  
+}

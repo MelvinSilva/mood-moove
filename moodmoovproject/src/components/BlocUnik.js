@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useEffect } from 'react'; 
 import { useState } from 'react';
 import ListeEvents from './ListeEvents';
+import { useNavigate } from 'react-router-dom';
+import Video from '../arcResize.mov'
 
 
 const BlocUnik = () => {
@@ -12,6 +14,21 @@ const BlocUnik = () => {
     const [dateEnd, setDateEnd] = useState("")
     const [genre, setGenre] = useState("")
     const [arrondissement, setArrondissement] = useState("")
+    let navigate = useNavigate()
+    let handleClick = ()=> {
+        navigate ('Demo')
+    }
+
+
+    useEffect(() => { // APPEL DE L'API GENERALE
+        axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=500`)
+            .then((res) => {
+                setDataApi(res.data.records)
+            })
+
+    }, [])
+
+
     const [soumettreForm, setSoumettreForm] = useState(false) // soumission du formulaire initialement sur "faux"
 
     const submitForm = (e) => { // fonction qui appel l'api au moment du click sur le formulaire
@@ -34,6 +51,7 @@ const BlocUnik = () => {
 
     return (
         <div>
+            <video autoPlay loop className="video" src={Video}  />
             <div className='unik'>
                 <form className='ouSortir' onSubmit={(e) => submitForm(e)}> 
                     <p className='ouSortir__text'>OU SORTIR ?</p>
@@ -99,7 +117,8 @@ const BlocUnik = () => {
                     <div></div>
                     <input required onChange={(e) => setDateStart(e.target.value)} className='ouSortir__date' type="date" id="date" />
                     <input required onChange={(e) => setDateEnd(e.target.value)} className='ouSortir__date' type="date" id="date2" />
-                    <button type="submit" className='ouSortir__btnVal'>VALIDER</button>
+                    <button onClick = {handleClick} type="submit" className='ouSortir__btnVal'>VALIDER</button>
+                    
                 </form>
 
             </div>

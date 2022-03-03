@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom";
 import Contact from './pages/Contact';
 import Accueil from './pages/Accueil';
 import AvisClients from './pages/AvisClients';
@@ -9,6 +9,9 @@ import Mooddaypopup3 from './components/Moodday/Mooddaypopup3';
 import Mooddaypopup4 from './components/Moodday/Mooddaypopup4';
 import Mooddaypopup5 from './components/Moodday/Mooddaypopup5';
 import ListeEvents from './components/ListeEvents';
+import DemoCarousel from './components/DemoCarousel';     
+import BlocUnik from './components/BlocUnik';
+
 
 
 function App() {
@@ -16,7 +19,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Accueil />} />
+          <Route path="/" element={<Navigate to="/accueil"  />} />
+          <Route path="/accueil" element={<Accueil />} >
+            <Route index element = {<BlocUnik />} />
+            <Route path="Demo" element = {<DemoCarousel />} />
+          </Route>
           <Route path="/avis" element={<AvisClients />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mooddaypop" element={<Mooddaypopup />} />
