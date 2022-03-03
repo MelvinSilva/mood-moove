@@ -1,19 +1,16 @@
 import React from 'react';
-import backgroundVideo from '../video/arc6.mp4';
-import BlocUnik from './BlocUnik';
+import { Outlet } from 'react-router-dom';
 
 
 const Main = () => {
     return (
-        
-        <div className='Home'>
+        <div>
             
-            <video autoPlay loop muted id='video'>
-            <source src={backgroundVideo} type='video/mp4'/>
-            </video>
-         <BlocUnik />
-       </div>
-       
+
+            <div className='block'>
+                <Outlet />
+            </div>
+        </div>
     );
 };
 
