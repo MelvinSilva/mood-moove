@@ -33,18 +33,6 @@
         margin: auto;
         border-radius: 10px;
     }
-    .link {
-        padding: 10px;
-        text-decoration: none;
-        color: white;
-        background-color: #8a1c1c;
-        border-radius: 5px;
-        &:hover {
-            background-color: black;
-            border-radius: 5px;
-            color: white;
-        }
-    }
 }
 
 .ouSortir__text {
@@ -82,18 +70,3 @@
 }
 
 //Pour la video//
-.Home {
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-}
-
-.video {
-    width: 100%;
-    z-index: -10;
-}

@@ -6,7 +6,7 @@ const ListeEvents = ({ api }) => { // on appel ici API directement qui est un pr
 
 
     return (
-            <div className="result-api">
+            <div className="">
                 <h1><strong>{api.fields.title}</strong></h1>
                 {/*<h3>{api.fields.date_start}</h3>*/}
                 <h4>{api.fields.date_description}</h4> {/*.split("<br />").join(" ")*/}
