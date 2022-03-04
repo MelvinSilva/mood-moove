@@ -3,9 +3,11 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Video from '../arcResize.mov'
+import Video from '../video/paris1.mp4'
 import { useContext } from 'react';
 import DisplayApi from './DisplayApi';
+import { Player } from 'video-react';
+
 
 
 const BlocUnik = () => {
@@ -40,7 +42,15 @@ const BlocUnik = () => {
 
     return (
         <div>
-            <video autoPlay loop className="video" src={Video} />
+        <div className='arc'>
+            
+            <Player controls="none" autoPlay loop='infinite' muted="muted" videoWidth="100%" >
+                <source  className="video" src={Video} type="video/mp4" />
+                <div className='test'></div>
+                </Player>
+                </div>
+               
+            
             <div className='unik'>
                 <form className='ouSortir' onSubmit={(e) => submitForm(e)}>
                     <p className='ouSortir__text'>OU SORTIR ?</p>

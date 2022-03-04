@@ -15,6 +15,46 @@
       "id": 2
     },
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "author": "fgxbdwbsdvsdvsdvsd",
+      "content": "dfdfwbdfbdfwbdfbdfbdfbvsdvsdvsdvsdvsd",
+      "date": 1645101757239,
+      "star": 80,
+      "id": 3
+    },
+    {
+      "author": "vsfvsv",
+      "content": "svsdvsv",
+      "date": 1645101780932,
+      "star": 0,
+      "id": 4
+    },
+    {
+      "author": "eazdad",
+      "content": "azdazd",
+      "date": 1645104685552,
+      "star": 0,
+      "id": 5
+    },
+    {
+      "author": "sjjdkkdjfj",
+      "content": "hfufujnkd",
+      "date": 1645113164138,
+      "star": 80,
+      "id": 6
+=======
+      "author": "Alban Thaumur",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.\n\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
+      "date": 1621536029778,
+      "star": "100",
+<<<<<<< HEAD
+      "id": 2  
+>>>>>>> 16a3e88f685e1ac322c4e8caec138b52cb22e40c
+=======
+      "id": 2
+>>>>>>> 8a6f37382185111c6d884ca440e04e449c715c8c
+=======
       "author": "Elliot",
       "content": "Laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
       "date": 1621536029778,
@@ -69,6 +109,7 @@
       "date": 1645221032964,
       "star": 100,
       "id": 10
+>>>>>>> 6118c88b1fb598e14340a22df2cd30f9fba1cc81
     }
   ]
 }
