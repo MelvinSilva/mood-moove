@@ -31,7 +31,7 @@ const BlocUnik = () => {
     // On choisi la date de debut dans l'input dateStart et la date de fin dans l'input dateEnd
 
     useEffect(() => { // Appel de l'api 
-        axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-${dateFilter}${genre}${arrondissement}&rows=500`)
+        axios.get(`https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-${dateFilter}${genre}${arrondissement}&rows=25`)
             .then((res) => {
                 setResultApi(res.data.records)
             })
