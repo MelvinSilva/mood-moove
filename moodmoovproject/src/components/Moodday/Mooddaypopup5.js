@@ -8,8 +8,8 @@ const Mooddaypopup5 = () => {
             <Header />
             <div id="moodpopup5" className="popimg">
 		        <a href="https://www.disneylandparis.com/fr-fr"><button className="img13"></button></a>
-		        <a href="https://www.puydufou.com/fr"><button className="img14"></button></a>
-		        <a href="https://www.zoobeauval.com/"><button className="img15"></button></a>
+		        <a href="https://www.mnhn.fr/fr/grande-galerie-de-l-evolution"><button className="img14"></button></a>
+		        <a href="https://www.paris.fr/pages/5-spectacles-de-cirque-a-voir-a-paris-19489"><button className="img15"></button></a>
             </div>
             <Footer />
         </div>
