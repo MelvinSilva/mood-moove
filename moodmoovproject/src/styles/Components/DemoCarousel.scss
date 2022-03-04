@@ -1,5 +1,18 @@
-.carouselmodif{
+.carouselmodif {
     width: 50%;
     height: auto;
     margin: auto;
+
+    .link {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #8a1c1c;
+        border-radius: 5px;
+        &:hover {
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+        }
+    }
 }
