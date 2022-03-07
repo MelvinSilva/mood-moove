@@ -8,7 +8,7 @@ const DemoCarousel = () => {
     return (
 
         <div className='carouselmodif'>
-            <Carousel className="componentCarousel" infiniteLoop autoPlay showThumbs={true} showIndicators={false} dynamicHeight={false}> {/* Les parametres jouent sur le dynamisme et affichage du carousel */}
+            <Carousel className="componentCarousel" infiniteLoop autoPlay showThumbs={true} showIndicators={false} dynamicHeight={false}>
                 {resultApi.map((api, key) => ( // on map le tableau avec les données de notre api SI)
                     <div api={api} key={key} >
                         <h1><strong>{api.fields.title}</strong></h1>
