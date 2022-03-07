@@ -1,4 +1,4 @@
-import { React, NavLink} from 'react-router-dom';
+import { React, NavLink } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaGoogle, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -14,16 +14,16 @@ const Footer = () => {
 
 
                     <div className="navigation">
-                        <NavLink to="/accueil" className={({isActive}) =>
-                        "nav-link" + (isActive ? "--active" : "")}>
+                        <NavLink to="/accueil" className={({ isActive }) =>
+                            "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>
-                        <NavLink to="/contact" className={({isActive}) =>
-                        "nav-link" + (isActive ? "--active" : "")}>
+                        <NavLink to="/contact" className={({ isActive }) =>
+                            "nav-link" + (isActive ? "--active" : "")}>
                             Contact
                         </NavLink>
-                        <NavLink to="/avis" className={({isActive}) =>
-                        "nav-link" + (isActive ? "--active" : "")}>
+                        <NavLink to="/avis" className={({ isActive }) =>
+                            "nav-link" + (isActive ? "--active" : "")}>
                             Avis clients
                         </NavLink>
                     </div>
@@ -39,21 +39,20 @@ const Footer = () => {
 
             <div className="footer2">
                 <div className='footer-center'>
-                    <h3 className="titre">Mood'Moove</h3>
-                    {/* <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3> */}
+                    <h3 className="title-header">M<span>OO</span>D M<span>OO</span>VE</h3>
 
 
                     <div className="navigation">
-                        <NavLink to="/accueil" className={({isActive}) =>
-                        "nav-link" + (isActive ? "--active" : "")}>
+                        <NavLink to="/accueil" className={({ isActive }) =>
+                            "nav-link" + (isActive ? "--active" : "")}>
                             Accueil
                         </NavLink>
-                        <NavLink to="/contact" className={({isActive}) =>
-                        "nav-link" + (isActive ? "--active" : "")}>
+                        <NavLink to="/contact" className={({ isActive }) =>
+                            "nav-link" + (isActive ? "--active" : "")}>
                             Contact
                         </NavLink>
-                        <NavLink to="/avis" className={({isActive}) =>
-                        "nav-link" + (isActive ? "--active" : "")}>
+                        <NavLink to="/avis" className={({ isActive }) =>
+                            "nav-link" + (isActive ? "--active" : "")}>
                             Avis clients
                         </NavLink>
                     </div>

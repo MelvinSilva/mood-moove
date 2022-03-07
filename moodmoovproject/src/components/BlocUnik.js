@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext, useRef } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { React, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Video from '../video/paris1.mp4'
@@ -7,7 +7,6 @@ import DisplayApi from './DisplayApi';
 
 
 const BlocUnik = () => {
-    const video= useRef(null)
     const { setResultApi } = useContext(DisplayApi)
     const [dateStart, setDateStart] = useState("")
     const [dateEnd, setDateEnd] = useState("")
@@ -32,7 +31,6 @@ const BlocUnik = () => {
             .then((res) => {
                 setResultApi(res.data.records)
             })
-            console.log(video)
     }, [arrondissement, genre, dateFilter]) // dépendence qui relance la requete de l'api a chaque modif
 
 
@@ -41,14 +39,15 @@ const BlocUnik = () => {
     return (
         <div className='mother'>
 
-            <video className="testVideo" ref={video} autoPlay loop='infinite' muted="muted" width="100%" >
+            <video className="testVideo" autoPlay loop='infinite' muted="muted" width="100%" >
                 <source className="video" src={Video} type="video/mp4" />
             </video>
+            <div className='remplaceVideo'></div>
  
             <div className='unik-container'>
                 <div className='unik'>
                     <form className='ouSortir' onSubmit={(e) => submitForm(e)}>
-                        <p className='ouSortir__text'>OU SORTIR ?</p>
+                        <p className='ouSortir__text'>QUE FAIRE À PARIS ?</p>
                         <select className='ouSortir__btn1' onChange={(e) => setArrondissement(e.target.value)}>
                             <option value="">--Arrondissement--</option>
                             <option value="&refine.address_zipcode=75001">Paris 75001</option>
