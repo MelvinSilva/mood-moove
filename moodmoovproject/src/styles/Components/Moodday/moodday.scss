@@ -13,9 +13,10 @@
 .imgFamille {
     width: 180px;
     height: 180px;
-    padding-top: 145px;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 90%;
     border-color: transparent;
 }
@@ -25,13 +26,13 @@
 .imgAmoureux:hover,
 .imgAmis:hover,
 .imgFamille:hover {
-    opacity: .7;
-    transition: .3s ease-in-out;
-    transform: scale(1.2)
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
 }
 
 .imgMaison {
-    background-image: url(../../../../public/assets/moodday/maison.png);
+    background-image: url("../../../../public/assets/moodday/maison.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -74,4 +75,15 @@ h1 {
     text-align: center;
     font-family: "Poppins";
     color: #8a1c1c;
+}
+
+@media all and(max-width: 840px) {
+    .imgMaison,
+    .imgFetard,
+    .imgAmoureux,
+    .imgAmis,
+    .imgFamille {
+        width: 90px;
+        height: 90px;
+    }
 }
