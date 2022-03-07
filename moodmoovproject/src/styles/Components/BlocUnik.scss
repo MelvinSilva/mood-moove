@@ -77,10 +77,15 @@
 .ouSortir__btnVal {
     background-color: #8a1c1c;
     color: rgb(242, 242, 242);
+
     &:hover {
         background: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
         cursor: pointer;
+
+        &:active {
+            transform: scale(1.2);
+        }
     }
 }
 

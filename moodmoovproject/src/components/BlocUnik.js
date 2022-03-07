@@ -5,7 +5,6 @@ import Video from '../video/paris1.mp4'
 import DisplayApi from './DisplayApi';
 
 
-
 const BlocUnik = () => {
     const { setResultApi } = useContext(DisplayApi)
     const [dateStart, setDateStart] = useState("")
@@ -13,14 +12,12 @@ const BlocUnik = () => {
     const [genre, setGenre] = useState("")
     const [arrondissement, setArrondissement] = useState("")
     let navigate = useNavigate()
-    let handleClick = () => {
-        navigate('Demo')
-    }
 
 
 
-    const submitForm = (e) => { // fonction qui appel l'api au moment du click sur le formulaire
+    const submitForm = (e) => { // fonction qui affiche l'api au moment du click sur le formulaire
         e.preventDefault();
+        navigate('Demo')
     }
 
     const dateFilter = `&q=date_start%3A%5B${dateStart}+TO+${dateEnd}%5D`
@@ -43,7 +40,7 @@ const BlocUnik = () => {
                 <source className="video" src={Video} type="video/mp4" />
             </video>
             <div className='remplaceVideo'></div>
- 
+
             <div className='unik-container'>
                 <div className='unik'>
                     <form className='ouSortir' onSubmit={(e) => submitForm(e)}>
@@ -108,21 +105,21 @@ const BlocUnik = () => {
                         <div className='testNul'>
                             <div className='divLabel'>
                                 <label className='divLabel__label'>Date de début*</label>
-                                <input onChange={(e) => setDateStart(e.target.value)} className='ouSortir__date' type="date" id="date" required />
+                                <input required onChange={(e) => setDateStart(e.target.value)} className='ouSortir__date' type="date" id="date" />
                             </div>
                             <div className='divLabel'>
                                 <label className='divLabel__label'>Date de fin*</label>
-                                <input onChange={(e) => setDateEnd(e.target.value)} className='ouSortir__date' type="date" id="date2" required="required" />
+                                <input required onChange={(e) => setDateEnd(e.target.value)} className='ouSortir__date' type="date" id="date2" />
                             </div>
                         </div>
-                        <button onClick={handleClick} type="submit" className='ouSortir__btnVal'>VALIDER</button>
+                        <button type="submit" className='ouSortir__btnVal'>VALIDER</button>
 
                     </form >
                 </div>
             </div>
-        </div >
+        </div>
 
     );
-};
+}
 
 export default BlocUnik;
