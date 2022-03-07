@@ -15,18 +15,27 @@
     em {
       font-size: 16px;
       font-weight: lighter;
+      @media all and(max-width:400px) {
+        font-size: 10px;
+      }
     }
 
     h3 {
       margin: 0;
       color: #8a1c1c;
       font-size: 19px;
+      @media all and(max-width:400px) {
+        font-size: 15px;
+      }
     }
   }
   .content {
     margin: 0;
     font-size: 19px;
     color: rgb(94, 94, 94);
+    @media all and(max-width:400px) {
+      font-size: 14px;
+    }
   }
 
   .note {
@@ -37,6 +46,9 @@
 
     span {
       color: #eeb72c;
+    }
+    @media all and(max-width:400px) {
+      font-size: 10px;
     }
   }
   textarea {
@@ -62,5 +74,13 @@
         filter: brightness(110%);
       }
     }
+  }
+  @media all and(max-width:830px) {
+    margin: auto;
+    width: 80%;
+  }
+  @media all and(max-width:400px) {
+    margin: auto;
+    width: 80%;
   }
 }

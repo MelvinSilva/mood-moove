@@ -8,7 +8,7 @@ const Avis = () => {
     const [newsData, setNewsData] = useState([]);
     const [author, setAuthor] = useState("")
     const [content, setContent] = useState("")
-    const [rating, setRating] = useState(0) // valeur a zero etoile
+    const [rating, setRating] = useState() // valeur a zero etoile
 
 
     useEffect(() => {
