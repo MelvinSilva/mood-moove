@@ -1,9 +1,8 @@
 .carouselmodif {
-    width: 50%;
+    width: 100%;
     height: auto;
-    margin: auto;
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
     .link {
         padding: 10px;
         text-decoration: none;
@@ -15,5 +14,18 @@
             border-radius: 5px;
             color: white;
         }
+    }
+}
+
+.componentCarousel {
+    width: 50%;
+    height: auto;
+}
+
+.carousel .slider.animated {
+    img {
+        width: auto;
+        height: 300px;
+        background-size: cover;
     }
 }
