@@ -104,11 +104,11 @@ const BlocUnik = () => {
                         </select>
                         <div className='testNul'>
                             <div className='divLabel'>
-                                <label className='divLabel__label'>Date de début*</label>
+                                <label className='divLabel__label'>Date de début *</label>
                                 <input required onChange={(e) => setDateStart(e.target.value)} className='ouSortir__date' type="date" id="date" />
                             </div>
                             <div className='divLabel'>
-                                <label className='divLabel__label'>Date de fin*</label>
+                                <label className='divLabel__label'>Date de fin *</label>
                                 <input required onChange={(e) => setDateEnd(e.target.value)} className='ouSortir__date' type="date" id="date2" />
                             </div>
                         </div>

@@ -7,7 +7,7 @@ const Formulaire = () => {
     }
 
     return (
-        <form className='formulaire' onSubmit={(alert) => envoiceAlert(alert)}>
+        <form className='formulaire' onSubmit={(alert) => envoiceAlert(alert)} >
             <h2>Contactez-nous</h2>
             <div className='formulaire__firstSecondName'>
                 <input required type='text' className='formulaire__name formulaire__filho' placeholder='Nom'/>
