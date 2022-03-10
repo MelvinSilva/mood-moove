@@ -14,7 +14,7 @@ useEffect(() => {
         console.log(res.data.records)
     })
 }, [])
-
+s
 
     return (
         <div>
