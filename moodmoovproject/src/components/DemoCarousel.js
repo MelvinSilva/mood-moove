@@ -5,13 +5,15 @@ import DisplayApi from './DisplayApi';
 
 const DemoCarousel = () => {
     const { resultApi } = useContext(DisplayApi)
-    return (
 
+    
+    return (
         <div className='carouselmodif'>
-            <Carousel className="componentCarousel" infiniteLoop autoPlay showThumbs={true} showIndicators={false} dynamicHeight={false}>
+            <Carousel className="componentCarousel" infiniteLoop autoPlay showThumbs={true} showIndicators={false}>
                 {resultApi.map((api, key) => ( // on map le tableau avec les données de notre api SI)
-                    <div api={api} key={key} >
+                    <div api={api} key={key} > 
                         <h1><strong>{api.fields.title}</strong></h1>
+                        {api.fields.date_description && <h4>{api.fields.date_description.split("<br />").join(" ")}</h4>}
                         <h5><em>{api.fields.address_name}</em> - {api.fields.address_street}, {api.fields.address_zipcode} {api.fields.address_city}</h5>
                         <p>{api.fields.price_detail}</p>
                         {api.fields.access_link && <p><a className="link" href={api.fields.access_link}>Voir le site de l'évenement</a></p>}
