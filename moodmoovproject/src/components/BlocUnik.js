@@ -17,7 +17,7 @@ const BlocUnik = () => {
 
     const submitForm = (e) => { // fonction qui affiche l'api au moment du click sur le formulaire
         e.preventDefault();
-        navigate('Demo')
+        navigate('carousel')
     }
 
     const dateFilter = `&q=date_start%3A%5B${dateStart}+TO+${dateEnd}%5D`

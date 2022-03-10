@@ -7,7 +7,7 @@ const Moodday = () => {
     return (
         <div>
                 
-            <h1>Mood du jour</h1>
+            <h1>MOOD DU JOUR</h1>
             <div id="contenu" className="moodimg">
                 <Link to="/mooddaypop"><button className="imgMaison" ></button></Link>
                 <Link to="/mooddaypop2"><button className="imgFetard"></button></Link>
