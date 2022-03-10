@@ -1,5 +1,4 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { React, Outlet } from 'react-router-dom';
 
 
 const Main = () => {
@@ -11,6 +10,7 @@ const Main = () => {
                 <Outlet />
             </div>
         </div>
+    
     );
 };
 
