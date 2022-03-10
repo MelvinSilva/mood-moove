@@ -8,9 +8,10 @@ import Mooddaypopup2 from './components/Moodday/Mooddaypopup2';
 import Mooddaypopup3 from './components/Moodday/Mooddaypopup3';
 import Mooddaypopup4 from './components/Moodday/Mooddaypopup4';
 import Mooddaypopup5 from './components/Moodday/Mooddaypopup5';
-import DemoCarousel from './components/DemoCarousel';
+import Carousel from './components/Carousel';
 import BlocUnik from './components/BlocUnik';
 import DisplayApi from './components/DisplayApi';
+import NotFound from './pages/NotFound';
 
 
 
@@ -24,10 +25,11 @@ function App() {
             <Route path="/" element={<Navigate to="/accueil" />} />
             <Route path="/accueil" element={<Accueil />} >
               <Route index element={<BlocUnik />} />
-              <Route path="Demo" element={<DemoCarousel />} />
+              <Route path="carousel" element={<Carousel />} />
             </Route>
             <Route path="/avis" element={<AvisClients />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
             <Route path="/mooddaypop" element={<Mooddaypopup />} />
             <Route path="/mooddaypop2" element={<Mooddaypopup2 />} />
             <Route path="/mooddaypop3" element={<Mooddaypopup3 />} />
