@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
+import Moodday from './Moodday';
 
 const Mooddaypopup5 = () => {
     return (
@@ -11,6 +12,7 @@ const Mooddaypopup5 = () => {
 		        <a href="https://www.mnhn.fr/fr/grande-galerie-de-l-evolution"><button className="img14"></button></a>
 		        <a href="https://www.paris.fr/pages/5-spectacles-de-cirque-a-voir-a-paris-19489"><button className="img15"></button></a>
             </div>
+            <Moodday />
             <Footer />
         </div>
     );

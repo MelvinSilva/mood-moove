@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
+import Moodday from './Moodday';
 
 const Mooddaypopup2 = () => {
     return (
@@ -11,6 +12,7 @@ const Mooddaypopup2 = () => {
 		        <a href='https://www.glazart.com/'><button className="img5"></button></a>
 		       <a href='http://larc-paris.com/'><button className="img6"></button></a>
             </div>
+            <Moodday />
             <Footer />
         </div>
     );
