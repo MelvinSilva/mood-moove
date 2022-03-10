@@ -13,7 +13,7 @@ const DemoCarousel = () => {
         <div className='carouselmodif'>
             {resultApi.length === 0 && <NotResult />} {/* si aucun evenements on affiche le composant NotResult */}
             {/* si il y a au moins un evenement on affiche le Carousel ci dessous */}
-            {resultApi.length > 0 && <Carousel className="componentCarousel" infiniteLoop showThumbs={false} showIndicators={false}>
+            {resultApi.length > 0 && <Carousel className="componentCarousel" autoPlay infiniteLoop showThumbs={false} showIndicators={false}>
                 {resultApi.map((api, key) => ( // on map le tableau avec les données de notre api SI)
                     <div api={api} key={key} >
                         <div className="card-carousel"><h1>{api.fields.title}</h1>
