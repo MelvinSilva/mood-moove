@@ -17,7 +17,7 @@ const BlocUnik = () => {
 
     const submitForm = (e) => { // fonction qui affiche l'api au moment du click sur le formulaire
         e.preventDefault();
-        navigate('Demo')
+        navigate('carousel')
     }
 
     const dateFilter = `&q=date_start%3A%5B${dateStart}+TO+${dateEnd}%5D`
@@ -104,11 +104,11 @@ const BlocUnik = () => {
                         </select>
                         <div className='testNul'>
                             <div className='divLabel'>
-                                <label className='divLabel__label'>Date de début*</label>
+                                <label className='divLabel__label'>Date de début *</label>
                                 <input required onChange={(e) => setDateStart(e.target.value)} className='ouSortir__date' type="date" id="date" />
                             </div>
                             <div className='divLabel'>
-                                <label className='divLabel__label'>Date de fin*</label>
+                                <label className='divLabel__label'>Date de fin *</label>
                                 <input required onChange={(e) => setDateEnd(e.target.value)} className='ouSortir__date' type="date" id="date2" />
                             </div>
                         </div>
