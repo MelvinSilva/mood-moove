@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mood-moove/static/css/main.1be27518.css",
-    "main.js": "/mood-moove/static/js/main.ea1d23f5.js",
+    "main.js": "/mood-moove/static/js/main.2637c999.js",
     "static/media/paris1.mp4": "/mood-moove/static/media/paris1.8e6f2c2197f56bb1ab2f.mp4",
     "static/media/paris.jpg": "/mood-moove/static/media/paris.4ca116500cfbfbe14fa7.jpg",
     "static/media/giphy.gif": "/mood-moove/static/media/giphy.95039c964d33264883ee.gif",
@@ -27,10 +27,10 @@
     "static/media/maison.png": "/mood-moove/static/media/maison.cae974c28078219a50e4.png",
     "index.html": "/mood-moove/index.html",
     "main.1be27518.css.map": "/mood-moove/static/css/main.1be27518.css.map",
-    "main.ea1d23f5.js.map": "/mood-moove/static/js/main.ea1d23f5.js.map"
+    "main.2637c999.js.map": "/mood-moove/static/js/main.2637c999.js.map"
   },
   "entrypoints": [
     "static/css/main.1be27518.css",
-    "static/js/main.ea1d23f5.js"
+    "static/js/main.2637c999.js"
   ]
 }
